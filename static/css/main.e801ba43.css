@@ -1,0 +1,2 @@
+.contact{background-color:#f08080}.home{background-color:#e0ffff}.topbar{background-color:#281f6c;height:70px;position:fixed;top:0;width:100%;z-index:2}.about{background-color:#add8e6}.project{background-color:#ffb6c1}.app{height:100vh}.app .section{background-color:#ffa07a;height:calc(100vh - 70px);position:relative;scroll-snap-type:y mandatory;top:70px;width:100%}scrollbar-width:none .app .section::-webkit-scrollbar{display:none}.app .section>*{height:calc(100vh - 70px);scroll-snap-align:start;width:100vw}
+/*# sourceMappingURL=main.e801ba43.css.map*/
