@@ -15,7 +15,7 @@ export default function Intro() {
   }, []);
 
   return (
-    <div className="intro" id="intro">
+    <div id="about" class="about section" className="intro" >
       <div className="left">
         <div className="imgContainer">
           <img src="assets/man.png" alt="" />

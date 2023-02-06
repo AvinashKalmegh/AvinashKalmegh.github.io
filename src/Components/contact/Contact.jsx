@@ -9,7 +9,7 @@ export default function Contact() {
     setMessage(true);
   };
   return (
-    <div className="contact" id="contact">
+    <div id="projects" className="contact" >
       <div className="left">
         <img src="assets/shake.svg" alt="" />
       </div>
