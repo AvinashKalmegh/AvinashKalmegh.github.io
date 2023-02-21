@@ -194,7 +194,7 @@ function Skills() {
     <Box
       id="Skills"
       w="full"
-      bg={colorMode === "dark" ? "#13022C" : "#d3cedb"}
+      bg={colorMode === "dark" ? "#13022C" : "#fbf0f0"}
       color="#ffffff"
       p="30px 0px"
       mt="-2px"
@@ -219,11 +219,11 @@ function Skills() {
             <Tab
               p={["5px", "10px", "10px 15px"]}
               fontSize={["10px", "15px", "20px"]}
-              bg={colorMode === "dark" ? "#4E406F" : "#9c8ebe"}
+              bg={colorMode === "dark" ? "#4E406F" : "#f3d2d1"}
               _selected={
                 colorMode === "dark"
                   ? { color: "#13022c", bg: "#C1B6DB" }
-                  : { color: "white", bg: "#423267" }
+                  : { color: "black", bg: "#ebb4b2" }
               }
             >
               All Skills
@@ -231,11 +231,11 @@ function Skills() {
             <Tab
               p={["5px", "10px", "10px 15px"]}
               fontSize={["10px", "15px", "20px"]}
-              bg={colorMode === "dark" ? "#4E406F" : "#9c8ebe"}
+              bg={colorMode === "dark" ? "#4E406F" : "#f3d2d1"}
               _selected={
                 colorMode === "dark"
                   ? { color: "#13022c", bg: "#C1B6DB" }
-                  : { color: "white", bg: "#423267" }
+                  : { color: "black", bg: "#ebb4b2" }
               }
             >
               Frontend
@@ -243,11 +243,11 @@ function Skills() {
             <Tab
               p={["5px", "10px", "10px 15px"]}
               fontSize={["10px", "15px", "20px"]}
-              bg={colorMode === "dark" ? "#4E406F" : "#9c8ebe"}
+              bg={colorMode === "dark" ? "#4E406F" : "#f3d2d1"}
               _selected={
                 colorMode === "dark"
                   ? { color: "#13022c", bg: "#C1B6DB" }
-                  : { color: "white", bg: "#423267" }
+                  : { color: "black", bg: "#ebb4b2" }
               }
             >
               Backend
@@ -255,11 +255,11 @@ function Skills() {
             <Tab
               p={["5px", "10px", "10px 15px"]}
               fontSize={["10px", "15px", "20px"]}
-              bg={colorMode === "dark" ? "#4E406F" : "#9c8ebe"}
+              bg={colorMode === "dark" ? "#4E406F" : "#f3d2d1"}
               _selected={
                 colorMode === "dark"
                   ? { color: "#13022c", bg: "#C1B6DB" }
-                  : { color: "white", bg: "#423267" }
+                  : { color: "black", bg: "#ebb4b2" }
               }
             >
               Tools
@@ -463,4 +463,3 @@ function Skills() {
 
 export default Skills;
 
-//_selected={colorMode==="dark"?  {{ color: '#13022c', bg: '#C1B6DB' }}  : {{ color: 'white', bg: '#665492' }}}

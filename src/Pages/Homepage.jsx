@@ -10,14 +10,14 @@ import resume from "../Images/Avinash-Kalmegh-Resume.pdf";
 function Homepage() {
   const { toggleColorMode, colorMode } = useColorMode();
   return (
-    <Box bg={colorMode === "dark" ? "#13022C" : "#d3cedb"}>
+    <Box bg={colorMode === "dark" ? "#13022C" : "#fbf0f0"}>
       <Box
         id="Home"
         w="100.1156%"
         ml="-1.069px"
         pt={["50px", "50px", "50px"]}
         color="#e1cefd"
-        bg={colorMode === "dark" ? "#13022C" : "#d3cedb"}
+        bg={colorMode === "dark" ? "#13022C" : "#fbf0f0"}
       >
         <Box
           h="570px"
@@ -80,8 +80,7 @@ function Homepage() {
                   Resume
                 </a>
               </Button>
-              {/* <Button _hover={{bg:"#4E406F", color:"white"}} mt="10px" p={["15px 15px", "20px 20px", "25px 25px"]} fontSize={["md", "lg", "xl"]} bg={colorMode==="dark"? "#C1B6DB" : "#251942"} color={colorMode==="dark"? "#13022c" : "white"} border="none" variant='solid' leftIcon={<DownloadIcon />}>
-                            <a href="https://drive.google.com/file/d/1Fv170bSSoWS-7ylXN6Axq7hsX1OHh6O_/view?usp=share_link" rel="noreferrer" target="_blank" download>Resume</a></Button> */}
+             
               <Box mt="15px" gap="15px" display="flex" color="#13022c">
                 <a
                   href="https://github.com/AvinashKalmegh"

@@ -78,7 +78,7 @@ function Project() {
     <Box
       id="Project"
       w="full"
-      bg={colorMode === "dark" ? "#13022C" : "#d3cedb"}
+      bg={colorMode === "dark" ? "#13022C" : "#fbf0f0"}
       color={colorMode === "dark" ? "#d3cedb" : "#13022C"}
       p="30px 0px"
       textAlign="center"

@@ -12,7 +12,7 @@ function Calender() {
       bg={
         colorMode === "dark"
           ? "linear-gradient(180deg, rgba(44,23,75,1) 45%, rgba(28,14,50,1) 99%)"
-          : "#bdb6c9"
+          : "#f7e1e0"
       }
       color={colorMode === "dark" ? "white" : "#13022C"}
       pb="60px"

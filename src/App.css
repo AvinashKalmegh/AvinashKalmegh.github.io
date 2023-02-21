@@ -38,13 +38,13 @@ body{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(195, 155, 216);
+  background: #ebb4b2;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(157, 140, 168);
+  background: #f1cbc9;
 }
 
 .App-header {

@@ -37,22 +37,22 @@ function Contacts() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .send("service_3i8hq0k", "template_mwm1m6l", values, "i5rrp59HT6jNdKwT8")
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response);
-          console.log(values);
-          setValues({
-            fullName: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          console.log("FAILED...", error);
-        }
-      );
+    // emailjs
+    //   .send("service_3i8hq0k", "template_mwm1m6l", values, "i5rrp59HT6jNdKwT8")
+    //   .then(
+    //     (response) => {
+    //       console.log("SUCCESS!", response);
+    //       console.log(values);
+    //       setValues({
+    //         fullName: "",
+    //         email: "",
+    //         message: "",
+    //       });
+    //     },
+    //     (error) => {
+    //       console.log("FAILED...", error);
+    //     }
+    //   );
   };
 
   const handleChange = (e) => {
@@ -65,7 +65,7 @@ function Contacts() {
       bg={
         colorMode === "dark"
           ? "linear-gradient(180deg, rgba(44,23,75,1) 45%, rgba(28,14,50,1) 99%)"
-          : "#bdb6c9"
+          : "#f7e1e0"
       }
       color={colorMode === "dark" ? "white" : "#13022C"}
       p={["30px 0px", "30px 0px", "60px 0px"]}

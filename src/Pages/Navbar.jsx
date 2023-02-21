@@ -15,10 +15,17 @@ import { FaMoon, FaSun } from "react-icons/fa";
 import "../home.css";
 import resume from "../Images/Avinash-Kalmegh-Resume.pdf";
 
+// Navbar : id="nav-menu"
+// Home section : id="home"
+// About section : id="about" class="about section"
+// Skills section : id="skills"
+// Projects section : id="projects"
+// Contact section : id="contact"
+
 function Navbar() {
   const [isscroll, setisscroll] = useState(false);
   const { toggleColorMode, colorMode } = useColorMode();
-  const { darktheme, setdarktheme } = useContext(ThemeContext || colorMode);
+  // const { darktheme, setdarktheme } = useContext(ThemeContext || colorMode);
   const [display, changeDisplay] = useState("none");
 
   function isScrolling() {
@@ -37,15 +44,16 @@ function Navbar() {
 
   return (
     <Box
+     id="nav-menu"
       zIndex={1}
       bg={
         isscroll
           ? colorMode === "dark"
             ? "#2c2244"
-            : "#a298b3"
+            : "#f3d2d1"
           : colorMode === "dark"
           ? "#13022C"
-          : "#d2c6d2"
+          : "#f7e1e0"
       }
       w="100%"
       p="10px 0px"
@@ -84,7 +92,7 @@ function Navbar() {
           ml="10px"
           alignItems="center"
         >
-          <Link display="flex" to="/">
+          <Link id="home" display="flex" to="/">
             <AnchorLink href="#Home">
               <Text
                 color={colorMode === "dark" ? "white" : "#1a0933"}
@@ -95,7 +103,7 @@ function Navbar() {
               </Text>
             </AnchorLink>
           </Link>
-          <Link display="flex" to="/about">
+          <Link id="about" className="about section" display="flex" to="/about">
             <AnchorLink href="#About">
               <Text
                 color={colorMode === "dark" ? "white" : "#1a0933"}
@@ -106,7 +114,7 @@ function Navbar() {
               </Text>
             </AnchorLink>
           </Link>
-          <Link display="flex" to="/skills">
+          <Link id="skills" display="flex" to="/skills">
             <AnchorLink href="#Skills">
               <Text
                 color={colorMode === "dark" ? "white" : "#1a0933"}
@@ -117,7 +125,7 @@ function Navbar() {
               </Text>
             </AnchorLink>
           </Link>
-          <Link display="flex">
+          <Link id="projects" display="flex">
             <AnchorLink href="#Project">
               <Text
                 color={colorMode === "dark" ? "white" : "#1a0933"}
@@ -129,7 +137,7 @@ function Navbar() {
               </Text>
             </AnchorLink>
           </Link>
-          <Link display="flex">
+          <Link id="contact" display="flex">
             <AnchorLink href="#Contact">
               <Text
                 color={colorMode === "dark" ? "white" : "#1a0933"}
@@ -250,19 +258,7 @@ function Navbar() {
                 Resume
               </a>
             </Text>
-            <Box textAlign="center">
-              <IconButton
-                aria-label="toggle theme"
-                rounded="full"
-                size="md"
-                w={8}
-                h={10}
-                onClick={toggleColorMode}
-                backgroundColor={colorMode === "dark" ? "#d3cedb" : "#13022C"}
-                color={colorMode === "dark" ? "#13022C" : "white"}
-                icon={colorMode === "dark" ? <FaSun /> : <FaMoon />}
-              />
-            </Box>
+            
           </Box>
         </Flex>
       </Flex>

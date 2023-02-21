@@ -32,7 +32,7 @@ function App() {
         <Box
           p="10px 0px"
           w="100%"
-          bg={colorMode === "dark" ? "#13022C" : "#d3cedb"}
+          bg={colorMode === "dark" ? "#13022C" : "#f3d2d1"}
         >
           <Text
             fontWeight="bold"
