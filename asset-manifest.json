@@ -1,19 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.50593110.css",
-    "main.js": "/static/js/main.ace559d1.js",
+    "main.js": "/static/js/main.ed37aca4.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
-    "static/media/aboutgif.gif": "/static/media/aboutgif.a50a087d3e8aad894f33.gif",
     "static/media/Bookit.png": "/static/media/Bookit.814aba2106b285016cc2.png",
     "static/media/Avinash-Kalmegh-Resume.pdf": "/static/media/Avinash-Kalmegh-Resume.016383065753b7a15904.pdf",
     "static/media/mypic.jpg": "/static/media/mypic.fd7013d010c8a64d2173.jpg",
     "index.html": "/index.html",
     "main.50593110.css.map": "/static/css/main.50593110.css.map",
-    "main.ace559d1.js.map": "/static/js/main.ace559d1.js.map",
+    "main.ed37aca4.js.map": "/static/js/main.ed37aca4.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.50593110.css",
-    "static/js/main.ace559d1.js"
+    "static/js/main.ed37aca4.js"
   ]
 }
