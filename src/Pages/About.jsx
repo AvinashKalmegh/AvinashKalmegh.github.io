@@ -7,7 +7,7 @@ import gif from "../Images/aboutgif.gif";
 function About() {
   const { toggleColorMode, colorMode } = useColorMode();
   return (
-    <Box
+    <Box className="nav-link about"
       id="About"
       bg={
         colorMode === "dark"
@@ -26,6 +26,7 @@ function About() {
           alignItems="center"
         >
           <Box
+          
             w={["90%", "80%", "45%"]}
             m="auto"
             color={colorMode === "dark" ? "white" : "#13022C"}

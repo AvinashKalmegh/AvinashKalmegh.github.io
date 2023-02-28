@@ -61,6 +61,7 @@ function Contacts() {
 
   return (
     <Box
+    className="nav-link contact"
       id="Contact"
       bg={
         colorMode === "dark"
@@ -105,8 +106,8 @@ function Contacts() {
               "Repeat(2, 1fr)",
             ]}
           >
-            <Box mb="20px">
-              <a href="tel:7894272853" rel="noreferrer" target="_blank">
+            <Box mb="20px"  id="contact-phone">
+              <a href="tel:7020859256" rel="noreferrer" target="_blank">
                 <Button
                   _hover={{ bg: "#4E406F", color: "#ffffff" }}
                   p={["0px", "20px", "35px"]}
@@ -120,9 +121,9 @@ function Contacts() {
                 </Button>
               </a>
             </Box>
-            <Box mb="20px">
+            <Box mb="20px" id="contact-email">
               <a
-                href="mailto: avinashkalmegh93@gmail.com"
+                // href="mailto: avinashkalmegh93@gmail.com"
                 rel="noreferrer"
                 target="_blank"
               >
@@ -139,7 +140,7 @@ function Contacts() {
                 </Button>
               </a>
             </Box>
-            <Box mb="20px">
+            <Box mb="20px" id="contact-github">
               <a
                 href="https://github.com/AvinashKalmegh"
                 rel="noreferrer"
@@ -158,7 +159,7 @@ function Contacts() {
                 </Button>
               </a>
             </Box>
-            <Box mb="20px">
+            <Box mb="20px" id="contact-linkedin">
               <a
                 href="https://www.linkedin.com/in/avinash-kalmegh-584919237/"
                 rel="noreferrer"
@@ -184,6 +185,7 @@ function Contacts() {
           width={["80%", "70%", "50%"]}
           m={["auto", "auto", ""]}
           pt="40px"
+          borderRadius={"5%"}
         >
           <Box width="80%" m="auto">
             <form onSubmit={handleSubmit}>
@@ -272,7 +274,7 @@ function Contacts() {
                 color={colorMode === "dark" ? "#13022c" : "white"}
                 border="none"
                 variant="solid"
-                type="submit"
+               
                 _focus={{ outline: "none" }}
                 value="Send"
                 rightIcon={<MdSend />}
@@ -301,8 +303,9 @@ function Contacts() {
             ]}
           >
             <Box>
-              <a href="tel:7894272853" rel="noreferrer" target="_blank">
+              <a href="tel:7020859256" rel="noreferrer" target="_blank">
                 <Button
+                id="contact-phone"
                   _hover={{ bg: "#4E406F", color: "#ffffff" }}
                   p={["0px", "10px", "35px"]}
                   fontSize={["2xl", "4xl", "6xl"]}
@@ -321,7 +324,7 @@ function Contacts() {
                 rel="noreferrer"
                 target="_blank"
               >
-                <Button
+                <Button  id="contact-email"
                   _hover={{ bg: "#4E406F", color: "#ffffff" }}
                   p={["0px", "10px", "35px"]}
                   fontSize={["2xl", "4xl", "6xl"]}
@@ -341,6 +344,7 @@ function Contacts() {
                 target="_blank"
               >
                 <Button
+                 id="contact-github"
                   _hover={{ bg: "#4E406F", color: "#ffffff" }}
                   p={["0px", "10px", "35px"]}
                   fontSize={["2xl", "4xl", "6xl"]}
@@ -360,6 +364,7 @@ function Contacts() {
                 target="_blank"
               >
                 <Button
+                id="contact-linkedin"
                   _hover={{ bg: "#4E406F", color: "#ffffff" }}
                   p={["0px", "10px", "35px"]}
                   fontSize={["2xl", "4xl", "6xl"]}

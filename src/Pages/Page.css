@@ -37,14 +37,14 @@
 .skillinner:hover{
     background: #2b273b;
     background-image: linear-gradient( 359.4deg,  rgba(12,20,69,1) -16.9%, rgba(71,30,84,1) 119.9% );
-    transform: rotate3d(1, 1, 1, 360deg);
+    transform: rotate3d(4, 4, 4, 360deg);
     transition-property: transform;
     transition-duration: 20s;
 }
 .skillinnerlight:hover{
     background: rgb(183,164,210);
     background: linear-gradient(180deg, #ebb4b2 17%, #f5dad9 43%, #ebb4b2 92%);
-    transform: rotate3d(1, 1, 1, 360deg);
+    transform: rotate3d(4, 4, 4, 360deg);
     transition-property: transform;
     transition-duration: 20s;
 }
@@ -77,26 +77,26 @@
 }
 
 .contact{
-    border: 3.5px solid rgba(200, 137, 230, 0.637);
+    border: 3.5px solid #ebb4b2;;
     padding: 20px;
     box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
 }
 .contactlight{
-    border: 2px solid #13022C;
-    box-shadow: 3px 4px 3px 2px rgb(193, 185, 201);
+    border: 2px solid #ebb4b2;;
+    box-shadow: 3px 4px 3px 2px #ebb4b2;;
     padding: 15px;
 }
 .contactlight:hover{
-    border: 2px solid #13022C;
+    border: 2px solid rgb(193, 185, 201);
     box-shadow: none;
     background: rgb(133,131,156);
     background: linear-gradient(120deg, #bc908e 2%, rgba(207,204,226,1) 53%, #bc908e 94%);
 }
-.contact:hover{
+/* .contact:hover{
     border: 3.5px solid rgba(200, 137, 230, 0.637);
     background: #2b273b;
     background-image: linear-gradient( 359.4deg,  rgba(12,20,69,1) -16.9%, rgba(71,30,84,1) 119.9% );
-}
+} */
 .iconbutton {
     text-decoration: none;
     border-radius: 60px;

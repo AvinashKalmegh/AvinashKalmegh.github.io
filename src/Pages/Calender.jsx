@@ -40,6 +40,7 @@ function Calender() {
             My Github Calender
           </Text>
           <GitHubCalendar
+           className="react-activity-calendar"
             username="AvinashKalmegh"
             blockSize={15}
             blockMargin={5}

@@ -9,7 +9,6 @@ import {
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { ThemeContext } from "../ThemeContext/ThemeContextProvider";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { FaMoon, FaSun } from "react-icons/fa";
 import "../home.css";
@@ -25,7 +24,6 @@ import resume from "../Images/Avinash-Kalmegh-Resume.pdf";
 function Navbar() {
   const [isscroll, setisscroll] = useState(false);
   const { toggleColorMode, colorMode } = useColorMode();
-  // const { darktheme, setdarktheme } = useContext(ThemeContext || colorMode);
   const [display, changeDisplay] = useState("none");
 
   function isScrolling() {
@@ -43,8 +41,8 @@ function Navbar() {
   }, []);
 
   return (
-    <Box
-     id="nav-menu"
+    <Box  
+      id="nav-menu"
       zIndex={1}
       bg={
         isscroll
@@ -81,16 +79,17 @@ function Navbar() {
               src="/portfolio-logo.png"
               alt="logo"
               transform="rotate(180deg)"
-              borderRadius={"50%"}
+              borderRadius={"10%"}
             />
           </AnchorLink>
         </Box>
         <Box
           display={["none", "none", "flex"]}
-          gap={["auto", "15px", "20px"]}
+          gap={["auto", "15px", "30px"]}
           justifyContent={["space-around", "space-between", "space-between"]}
-          ml="10px"
+          
           alignItems="center"
+          border={"0px solid red"}
         >
           <Link id="home" display="flex" to="/">
             <AnchorLink href="#Home">
@@ -149,6 +148,7 @@ function Navbar() {
             </AnchorLink>
           </Link>
           <Text
+          className="nav-link resume"
             onClick={() =>
               window.open(
                 "https://drive.google.com/file/d/1xhABIqF3q0EsSpnZlSdTegrl72RpRAgj/view?usp=sharing",
@@ -159,11 +159,11 @@ function Navbar() {
             fontWeight="500"
             fontSize={["sm", "sm", "lg"]}
           >
-            <a href={resume} download>
+            <a id="resume-button-1" href={resume} download>
               Resume
             </a>
           </Text>
-          <IconButton
+          {/* <IconButton
             aria-label="toggle theme"
             rounded="full"
             size="md"
@@ -172,7 +172,7 @@ function Navbar() {
             backgroundColor={colorMode === "dark" ? "#d3cedb" : "#13022C"}
             color={colorMode === "dark" ? "#13022C" : "white"}
             icon={colorMode === "dark" ? <FaSun /> : <FaMoon />}
-          />
+          /> */}
         </Box>
         <IconButton
           aria-label="Open Menu"
@@ -181,7 +181,7 @@ function Navbar() {
           p="0px"
           _hover={{ bg: "none" }}
           mr={1}
-          color="white"
+          color="black"
           icon={<HamburgerIcon w="1.7em" h="1.7em" />}
           display={["flex", "flex", "none"]}
           onClick={() => changeDisplay("flex")}
@@ -258,7 +258,6 @@ function Navbar() {
                 Resume
               </a>
             </Text>
-            
           </Box>
         </Flex>
       </Flex>

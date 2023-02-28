@@ -192,6 +192,7 @@ function Skills() {
 
   return (
     <Box
+    className="nav-link skills"
       id="Skills"
       w="full"
       bg={colorMode === "dark" ? "#13022C" : "#fbf0f0"}
@@ -228,7 +229,7 @@ function Skills() {
             >
               All Skills
             </Tab>
-            <Tab
+            {/* <Tab
               p={["5px", "10px", "10px 15px"]}
               fontSize={["10px", "15px", "20px"]}
               bg={colorMode === "dark" ? "#4E406F" : "#f3d2d1"}
@@ -263,11 +264,12 @@ function Skills() {
               }
             >
               Tools
-            </Tab>
+            </Tab> */}
           </TabList>
           <TabPanels>
             <TabPanel>
               <Box
+            
                 display="grid"
                 gap={["20px", "30px", "40px"]}
                 gridTemplateColumns={[
@@ -280,7 +282,10 @@ function Skills() {
                 {allskills &&
                   allskills.map((el) => {
                     return (
-                      <Box
+                      <Box className="skills-card">
+
+                        <Box
+                      
                         key={el.id}
                         className={
                           colorMode === "dark"
@@ -289,6 +294,7 @@ function Skills() {
                         }
                         p={["10px", "15px", "17px"]}
                         h={["120px", "160px", "180px"]}
+                        borderRadius={"5%"}
                       >
                         <Box
                           className={
@@ -297,23 +303,26 @@ function Skills() {
                               : "skillinnerlight"
                           }
                           p={["5px", "7px", "15px"]}
+                          borderRadius={"5%"}
                         >
                           <Icon
+                            className="skills-card-img"
                             as={el.iconas}
                             w={["30px", "35px", "50px"]}
                             h="50px"
                             color={colorMode === "dark" ? "white" : "#13022C"}
                           />
-                          <Text fontSize={["10px", "15px", "20px"]} mt="10px">
+                          <Text  className="skills-card-name" fontSize={["10px", "15px", "20px"]} mt="10px">
                             {el.text}
                           </Text>
+                      </Box>
                         </Box>
                       </Box>
                     );
                   })}
               </Box>
             </TabPanel>
-            <TabPanel>
+            {/* <TabPanel>
               <Box
                 display="grid"
                 gap={["20px", "30px", "40px"]}
@@ -327,35 +336,42 @@ function Skills() {
                 {frontend &&
                   frontend.map((el) => {
                     return (
+                      <Box className="skills-card">
+
                       <Box
-                        key={el.id}
+                    
+                      key={el.id}
+                      className={
+                        colorMode === "dark"
+                          ? "skillouter"
+                          : "skillouterlight"
+                      }
+                      p={["10px", "15px", "17px"]}
+                      h={["120px", "160px", "180px"]}
+                      borderRadius={"5%"}
+                    >
+                      <Box
                         className={
                           colorMode === "dark"
-                            ? "skillouter"
-                            : "skillouterlight"
+                            ? "skillinner"
+                            : "skillinnerlight"
                         }
-                        p={["10px", "15px", "17px"]}
-                        h={["120px", "160px", "180px"]}
+                        p={["5px", "7px", "15px"]}
+                        borderRadius={"5%"}
                       >
-                        <Box
-                          className={
-                            colorMode === "dark"
-                              ? "skillinner"
-                              : "skillinnerlight"
-                          }
-                          p={["5px", "7px", "15px"]}
-                        >
-                          <Icon
-                            as={el.iconas}
-                            w={["30px", "35px", "50px"]}
-                            h="50px"
-                            color={colorMode === "dark" ? "white" : "#13022C"}
-                          />
-                          <Text fontSize={["10px", "15px", "20px"]} mt="10px">
-                            {el.text}
-                          </Text>
-                        </Box>
+                        <Icon
+                          className="skills-card-img"
+                          as={el.iconas}
+                          w={["30px", "35px", "50px"]}
+                          h="50px"
+                          color={colorMode === "dark" ? "white" : "#13022C"}
+                        />
+                        <Text  className="skills-card-name" fontSize={["10px", "15px", "20px"]} mt="10px">
+                          {el.text}
+                        </Text>
+                    </Box>
                       </Box>
+                    </Box>
                     );
                   })}
               </Box>
@@ -374,7 +390,10 @@ function Skills() {
                 {backend &&
                   backend.map((el) => {
                     return (
-                      <Box
+                      <Box className="skills-card">
+
+                        <Box
+                      
                         key={el.id}
                         className={
                           colorMode === "dark"
@@ -383,6 +402,7 @@ function Skills() {
                         }
                         p={["10px", "15px", "17px"]}
                         h={["120px", "160px", "180px"]}
+                        borderRadius={"5%"}
                       >
                         <Box
                           className={
@@ -391,16 +411,19 @@ function Skills() {
                               : "skillinnerlight"
                           }
                           p={["5px", "7px", "15px"]}
+                          borderRadius={"5%"}
                         >
                           <Icon
+                            className="skills-card-img"
                             as={el.iconas}
                             w={["30px", "35px", "50px"]}
                             h="50px"
                             color={colorMode === "dark" ? "white" : "#13022C"}
                           />
-                          <Text fontSize={["10px", "15px", "20px"]} mt="10px">
+                          <Text  className="skills-card-name" fontSize={["10px", "15px", "20px"]} mt="10px">
                             {el.text}
                           </Text>
+                      </Box>
                         </Box>
                       </Box>
                     );
@@ -421,7 +444,10 @@ function Skills() {
                 {tools &&
                   tools.map((el) => {
                     return (
-                      <Box
+                      <Box className="skills-card">
+
+                        <Box
+                      
                         key={el.id}
                         className={
                           colorMode === "dark"
@@ -430,6 +456,7 @@ function Skills() {
                         }
                         p={["10px", "15px", "17px"]}
                         h={["120px", "160px", "180px"]}
+                        borderRadius={"5%"}
                       >
                         <Box
                           className={
@@ -438,22 +465,25 @@ function Skills() {
                               : "skillinnerlight"
                           }
                           p={["5px", "7px", "15px"]}
+                          borderRadius={"5%"}
                         >
                           <Icon
+                            className="skills-card-img"
                             as={el.iconas}
                             w={["30px", "35px", "50px"]}
                             h="50px"
                             color={colorMode === "dark" ? "white" : "#13022C"}
                           />
-                          <Text fontSize={["10px", "15px", "20px"]} mt="10px">
+                          <Text  className="skills-card-name" fontSize={["10px", "15px", "20px"]} mt="10px">
                             {el.text}
                           </Text>
+                      </Box>
                         </Box>
                       </Box>
                     );
                   })}
               </Box>
-            </TabPanel>
+            </TabPanel> */}
           </TabPanels>
         </Tabs>
       </Box>

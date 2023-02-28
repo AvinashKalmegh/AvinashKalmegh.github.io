@@ -29,7 +29,7 @@ function App() {
         <Stats />
         <Project />
         <Contacts />
-        <Box
+        {/* <Box
           p="10px 0px"
           w="100%"
           bg={colorMode === "dark" ? "#13022C" : "#f3d2d1"}
@@ -43,7 +43,7 @@ function App() {
             Designed and developed by Avinash Kalmegh, @2023 All rights
             reserved
           </Text>
-        </Box>
+        </Box> */}
       </div>
     </div>
   );

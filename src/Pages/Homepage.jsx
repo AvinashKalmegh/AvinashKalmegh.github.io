@@ -10,7 +10,7 @@ import resume from "../Images/Avinash-Kalmegh-Resume.pdf";
 function Homepage() {
   const { toggleColorMode, colorMode } = useColorMode();
   return (
-    <Box bg={colorMode === "dark" ? "#13022C" : "#fbf0f0"}>
+    <Box className="nav-link home" bg={colorMode === "dark" ? "#13022C" : "#fbf0f0"}>
       <Box
         id="Home"
         w="100.1156%"
@@ -40,10 +40,11 @@ function Homepage() {
               >
                 Hi👋, my name is
               </Text>
-              <Text fontFamily="cursive" fontSize={["2xl", "4xl", "5xl"]}>
+              <Text id="user-detail-name" fontFamily="cursive" fontSize={["2xl", "4xl", "5xl"]}>
                 Avinash Kalmegh
               </Text>
               <Box
+              id="user-detail-intro"
                 fontFamily="sans-serif"
                 fontSize={["20px", "3xl", "3xl"]}
                 display="flex"
@@ -60,6 +61,7 @@ function Homepage() {
                 />
               </Box>
               <Button
+              // id="resume-button-2"
                 onClick={() =>
                   window.open(
                     "https://drive.google.com/file/d/1xhABIqF3q0EsSpnZlSdTegrl72RpRAgj/view?usp=sharing",
@@ -76,7 +78,7 @@ function Homepage() {
                 variant="solid"
                 leftIcon={<DownloadIcon />}
               >
-                <a href={resume} download rel="noreferrer">
+                <a id="resume-button-2" href={resume} download rel="noreferrer">
                   Resume
                 </a>
               </Button>
@@ -124,12 +126,13 @@ function Homepage() {
             p="5px"
             w={["45%", "35%", "25%"]}
             m="20px auto 0px auto"
-            rounded={["50%", "50%", "50%"]}
+            rounded={["10%", "10%", "10%"]}
           >
             <Image
+             className="home-img"
               boxShadow="xl"
               w="100%"
-              rounded={["50%", "50%", "50%"]}
+              rounded={["10%", "10%", "10%"]}
               src={mypic}
               alt="img"
             />

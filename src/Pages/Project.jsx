@@ -4,6 +4,9 @@ import { BiLinkExternal } from "react-icons/bi";
 import { useContext } from "react";
 import { ThemeContext } from "../ThemeContext/ThemeContextProvider";
 import Bookit from "../Images/Bookit.png";
+import Bewakoof from "../Images/Bewakoof.png";
+import Shoppers from "../Images/Shoppers.png";
+import Indiegogo from "../Images/Indiegogo.png";
 
 function Project() {
   let projectdata = [
@@ -15,67 +18,50 @@ function Project() {
       desc: "A travel website, where user can login, signup, plan their trips, book flight, book hotels, wishlist the trips, view nearby restaurants, search by location etc.",
       techstack: "JavaScript, HTML, CSS",
       livelink: "https://neon-salmiakki-934ec6.netlify.app/",
-      gitlink:
-        "https://github.com/sapna1309/Booking-Clone",
+      gitlink: "https://github.com/sapna1309/Booking-Clone",
     },
-    // {
-    //   id: 2,
-    //   name: "Nordstorm Clone",
-    //   img: nordstorm,
-    //   type: "Group",
-    //   techstack: "React, Chakra UI, JavaScript, Bootstrap",
-    //   desc: "An E-Commerce website where user can login, signup, view products, use filter and sort, add products to cart and place order after payment",
-    //   livelink: "https://makeshift-thread-5916-sankalp2009.vercel.app/",
-    //   gitlink: "https://github.com/yadavsankt24/makeshift-thread-5916",
-    // },
-    // {
-    //   id: 3,
-    //   name: "Meanbuy Clone",
-    //   img: meanbuy,
-    //   type: "Individual",
-    //   desc: "An E-Commerce website having the unique feature which allows the users to sell their products as well. User can Login, Signup, Visit Seller's Page, Whatsapp Page, view products, add products to the cart etc.",
-    //   techstack: "HTML, CSS, JavaScript",
-    //   livelink: "https://meanbuy-clone-theta.vercel.app/",
-    //   gitlink: "https://github.com/sanghamitra0591/murky-rate-2238",
-    // },
-    // {
-    //   id: 4,
-    //   name: "Google digital Garage Clone",
-    //   img: googledigitalgarage,
-    //   type: "Group",
-    //   desc: "A digital learing platform by Google, where user can signin, login, check for courses, certification, live training, etc.",
-    //   techstack: "HTML, CSS, JavaScript",
-    //   livelink: "https://google-digital-garage-clone.vercel.app/",
-    //   gitlink: "https://github.com/imrangadwal10/zonked-instrument-5361",
-    // },
-    // {
-    //   id: 5,
-    //   name: "Slideshow Maker",
-    //   img: albummaker,
-    //   type: "Individual",
-    //   techstack: "HTML, CSS, JavaScript",
-    //   desc: "An Album maker app where user can add photos and make slideshow using those, find random photos by clicking on Game mode",
-    //   livelink: "https://slideshow-maker.vercel.app/",
-    //   gitlink:
-    //     "https://github.com/sanghamitra0591/exploring/tree/main/album-maker",
-    // },
-    // {
-    //   id: 6,
-    //   name: "Recipe App",
-    //   img: recipeapp,
-    //   type: "Individual",
-    //   techstack: "HTML, CSS, JavaScript",
-    //   desc: "An app which provides various recipies to user by searching, also have random recipies and recipe of the day",
-    //   livelink: "https://receipe.vercel.app/",
-    //   gitlink:
-    //     "https://github.com/sanghamitra0591/exploring/tree/main/food-app-II",
-    // },
+    {
+      id: 2,
+      name: "Bewakoof.com Clone",
+      img: Bewakoof,
+      type: "Individual",
+      techstack: "JavaScript, HTML, CSS",
+      desc: "An E-Commerce website where user can login, signup, view products",
+      livelink: "https://resplendent-blancmange-e7938d.netlify.app/",
+      //  gitlink: "https://github.com/AvinashKalmegh/faded-cat-6669",
+      gitlink: "https://github.com/sapna1309/Booking-Clone",
+
+    },
+    {
+      id: 3,
+      name: "Shoppers.com",
+      img: Shoppers,
+      type: "Individual",
+      desc: "An E-Commerce website having the unique feature which allows the users to sell their products as well. User can Login, Signup, view products, add products to the cart etc.",
+      techstack: "React, Chakra-ui, CSS",
+      livelink: "https://velvety-rugelach-479069.netlify.app/",
+      // gitlink: "https://github.com/AvinashKalmegh/flaky-jump-6150",
+      gitlink: "https://github.com/sapna1309/Booking-Clone",
+
+    },
+    {
+      id: 4,
+      name: "Indiegogo Clone",
+      img: Indiegogo,
+      type: "Individual",
+      desc: "A crowdfunding, where user can signin, login, check for various projects to give/recieve fundings, etc.",
+      techstack: "HTML, CSS, JavaScript",
+      livelink: "https://stellar-kangaroo-072d7e.netlify.app/",
+      gitlink: "https://github.com/AvinashKalmegh/august-committee-6550-",
+    },
+   
   ];
 
   const { toggleColorMode, colorMode } = useColorMode();
 
   return (
     <Box
+      className="nav-link projects"
       id="Project"
       w="full"
       bg={colorMode === "dark" ? "#13022C" : "#fbf0f0"}
@@ -112,17 +98,17 @@ function Project() {
                     colorMode === "dark" ? "projectouter" : "projectouterlight"
                   }
                 >
-                  <Box>
+                  <Box className="project-card">
                     <Image w="100%" src={project.img} alt="project-thumbnail" />
-                    <Box w="100%">
-                      <Text fontSize={["xl", "2xl", "2xl"]}>
+                    <Box w="100%" className="project-description">
+                      <Text className="project-title" fontSize={["xl", "2xl", "2xl"]}>
                         {project.name}
                       </Text>
                       <Text fontSize={["lg", "xl", "xl"]}>
                         ( {project.type} )
                       </Text>
                       <Text fontSize={["xs", "sm", "md"]}>{project.desc}</Text>
-                      <Text fontSize={["sm", "md", "lg"]} fontWeight="bold">
+                      <Text className="project-tech-stack" fontSize={["sm", "md", "lg"]} fontWeight="bold">
                         Techstacks :-{project.techstack}
                       </Text>
                       <Box
@@ -132,6 +118,7 @@ function Project() {
                         justifyContent="space-around"
                       >
                         <Button
+                         className="project-deployed-link"
                           as="a"
                           target="_blank"
                           href={project.livelink}
@@ -148,6 +135,7 @@ function Project() {
                           Live
                         </Button>
                         <Button
+                        className="project-github-link"
                           as="a"
                           target="_blank"
                           href={project.gitlink}
