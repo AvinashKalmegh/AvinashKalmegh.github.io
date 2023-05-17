@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ee8a6ca8.css",
+    "main.js": "/static/js/main.c4d9376d.js",
+    "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/aboutgif.gif": "/static/media/aboutgif.f0b59d4cde082d35b87a.gif",
+    "static/media/Shoppers.png": "/static/media/Shoppers.e7ce80c11eca860d4ed4.png",
+    "static/media/Bookit.png": "/static/media/Bookit.814aba2106b285016cc2.png",
+    "static/media/Bewakoof.png": "/static/media/Bewakoof.5fe7e3fa3fd0c38e5399.png",
+    "static/media/Indiegogo.png": "/static/media/Indiegogo.b0a99f03e35621fabe3f.png",
+    "static/media/Avinash-Kalmegh-Resume.pdf": "/static/media/Avinash-Kalmegh-Resume.016383065753b7a15904.pdf",
+    "static/media/mypic.jpg": "/static/media/mypic.fd7013d010c8a64d2173.jpg",
+    "index.html": "/index.html",
+    "main.ee8a6ca8.css.map": "/static/css/main.ee8a6ca8.css.map",
+    "main.c4d9376d.js.map": "/static/js/main.c4d9376d.js.map",
+    "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee8a6ca8.css",
+    "static/js/main.c4d9376d.js"
+  ]
+}
